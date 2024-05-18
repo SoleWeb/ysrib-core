@@ -7,6 +7,7 @@ import WhyWe from "./why-we/page";
 import Pricing from "./pricing/page";
 import Contact from "./contact/page";
 import Footer from "./footer/page";
+import { UnderConstruction } from "@/utils/alert/underConstruction";
 
 export default function Home() {
   return (

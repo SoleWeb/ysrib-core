@@ -24,7 +24,7 @@ const features = [
 
 const Pricing = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div id="pricing" className="flex flex-col justify-center items-center">
       <div
         className="
         text-4xl 

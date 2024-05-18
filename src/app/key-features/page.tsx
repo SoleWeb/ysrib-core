@@ -1,7 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import { toggle } from "@/utils/functions/toggle";
+import { UnderConstruction } from "@/utils/alert/underConstruction";
 
 const features = [
   {
@@ -50,10 +52,11 @@ const features = [
 ];
 
 const KeyFeatures = () => {
+  const [open, setOpen] = useState<boolean>(false);
   return (
     <div className="">
-      <div
-        className="lg:flex-row flex-col items-center flex  justify-center pb-10">
+      <UnderConstruction open={open} onOpenChange={setOpen} />
+      <div className="lg:flex-row flex-col items-center flex  justify-center pb-10">
         <div className="p-5 justify-center lg:w-1/3">
           <div
             className="
@@ -65,14 +68,18 @@ const KeyFeatures = () => {
                 text-4xl
                 lg:text-6xl
                 font-bold
-                pb-10">
+                pb-10"
+          >
             From startup to enterprise, Yasrib is built for all.
           </div>
           {/* <div className="text-2xl mb-8">
             Built for all businesses and communities, Yasrib is the only
             platform you need to grow your business.
           </div> */}
-          <button className="bg-blue-500 text-white p-4 justify-center flex lg:w-1/3 rounded-lg hover:bg-blue-600">
+          <button
+            className="bg-blue-500 text-white p-4 justify-center flex lg:w-1/3 rounded-lg hover:bg-blue-600"
+            onClick={() => toggle(setOpen)}
+          >
             Get Started
           </button>
         </div>
@@ -105,7 +112,8 @@ const KeyFeatures = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex-col space-y-6 pb-10 border p-8 rounded-xl items-center justify-center w-full hover:scale-105 transform transition-all duration-500 ease-in-out">
+              className="flex-col space-y-6 pb-10 border p-8 rounded-xl items-center justify-center w-full hover:scale-105 transform transition-all duration-500 ease-in-out"
+            >
               <div className="text-gray-600 text-3xl font-bold">
                 <Image
                   src={feature.image}

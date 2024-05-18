@@ -12,8 +12,8 @@ const Navbar = () => {
     h-20
     ">
         <BrandLogo />
-        <NavbarHdr />
-        <NavbarHdrActions />
+        {/* <NavbarHdr /> */}
+        {/* <NavbarHdrActions /> */}
     </div>;
 }
  
