@@ -4,6 +4,7 @@ import LandingSection from "./landing-section/page";
 import Carousel from "../components/carousel";
 import KeyFeatures from "./key-features/page";
 import WhyWe from "./why-we/page";
+import Pricing from "./pricing/page";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Carousel />
       <KeyFeatures />
       <WhyWe />
+      {/* <Pricing /> */}
     </div>
   );
 }
