@@ -1,5 +1,5 @@
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/src/components/ui/button";
 
 import {
     Sheet,
@@ -8,7 +8,7 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-  } from "@/components/ui/sheet"
+  } from "@/src/components/ui/sheet"
   
   import { AlignJustify } from "lucide-react";
 
