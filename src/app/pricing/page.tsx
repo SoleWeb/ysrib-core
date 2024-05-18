@@ -29,23 +29,23 @@ const Pricing = () => {
         className="
         text-4xl 
         text-center
-         md:text-6xl 
+         lg:text-6xl 
          font-bold 
          bg-gradient-to-r
         from-black
          to-gray-500 
          bg-clip-text
-         text-transparent md:pb-10
+         text-transparent lg:pb-10
         
         "
       >
         Pricing
-        <div className="text-2xl text-center md:text-4xl font-bold md:py-10">
+        <div className="text-2xl text-center lg:text-4xl font-bold lg:py-10">
           Simple and transparent pricing plans for all businesses.
         </div>
       </div>
 
-      <div className="md:flex">
+      <div className="lg:flex">
         {features.map((feature, index) => (
           <div key={index} className="p-4">
             <div

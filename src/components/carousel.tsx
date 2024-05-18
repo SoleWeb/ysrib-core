@@ -83,7 +83,7 @@ const Carousel = () => {
     <div>
       <div
         className="items-center justify-center flex text-3xl font-bold lg:pb-10 px-10 bg-gradient-to-r from-blue-500 to-green-300 bg-clip-text text-transparent">
-        More than 100+ brands have built their business with Bird Software
+        More than 100+ brands have built their business with Yasrib Software
       </div>
 
       <div className="grid sm:grid-cols-3 md:grid-cols-6 p-4 lg:flex lg:flex-wrap lg:items-center lg:justify-center">

@@ -63,7 +63,7 @@ const KeyFeatures = () => {
                 bg-clip-text
                 text-transparent
                 text-4xl
-                md:text-6xl
+                lg:text-6xl
                 font-bold
                 pb-10">
             From startup to enterprise, Yasrib is built for all.
@@ -88,7 +88,7 @@ const KeyFeatures = () => {
                 text-3xl
                 flex
                 justify-center
-                md:text-5xl
+                lg:text-5xl
                 font-bold
                 pt-5
                 pb-10
@@ -101,7 +101,7 @@ const KeyFeatures = () => {
           Key Features
         </div>
 
-        <div className="grid grid-cols-1 p-4 md:grid md:grid-cols-3 gap-4 md:px-40">
+        <div className="grid grid-cols-1 p-4 lg:grid lg:grid-cols-3 gap-4 lg:px-40">
           {features.map((feature, index) => (
             <div
               key={index}

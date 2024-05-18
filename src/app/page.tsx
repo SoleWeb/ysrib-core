@@ -5,6 +5,8 @@ import Carousel from "../components/carousel";
 import KeyFeatures from "./key-features/page";
 import WhyWe from "./why-we/page";
 import Pricing from "./pricing/page";
+import Contact from "./contact/page";
+import Footer from "./footer/page";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <KeyFeatures />
       <WhyWe />
       {/* <Pricing /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }
