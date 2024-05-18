@@ -2,7 +2,8 @@ import Image from "next/image";
 import Navbar from "./navbar/page";
 import LandingSection from "./landing-section/page";
 import Carousel from "../components/carousel";
-import KeyFeatures from "./brands-section/page";
+import KeyFeatures from "./key-features/page";
+import WhyWe from "./why-we/page";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <LandingSection />
       <Carousel />
       <KeyFeatures />
+      <WhyWe />
     </div>
   );
 }

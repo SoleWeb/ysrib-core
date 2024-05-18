@@ -7,7 +7,7 @@ const features = [
   {
     name: "Customizable",
     description:
-      "Choose from 100s of designer made templates, and change anything you want to create your professional eCommerce website.",
+      "Choose from 100s of designer made templates, and change anything you want to create your professional production build.",
     image: "/images/icons/icon-customizable.png",
     alt: "Customizable",
     color: "blue",
@@ -15,21 +15,21 @@ const features = [
   {
     name: "Fast ",
     description:
-      "Choose from 100s of designer made templates, and change anything you want to create your professional eCommerce website.",
+      "Choose from 100s of designer made templates, and change anything you want to create your professional production build.",
     image: "/images/icons/icon-fast.png",
     alt: "Customizable",
   },
   {
     name: "Integrations",
     description:
-      "Choose from 100s of designer made templates, and change anything you want to create your professional eCommerce website.",
+      "Choose from 100s of designer made templates, and change anything you want to create your professional production build.",
     image: "/images/icons/icon-integration.png",
     alt: "Customizable",
   },
   {
     name: "Full Stack",
     description:
-      "Choose from 100s of designer made templates, and change anything you want to create your professional eCommerce website.",
+      "Choose from 100s of designer made templates, and change anything you want to create your professional production build.",
     image: "/images/icons/icon-stack.png",
     alt: "Customizable",
   },
