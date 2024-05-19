@@ -1,5 +1,5 @@
-'use client'
-import { UnderConstruction } from "@/utils/alert/underConstruction";
+"use client";
+import { UnderConstruction } from "@/components/alert/underConstruction";
 import { toggle } from "@/utils/functions/toggle";
 import { useState } from "react";
 
@@ -19,7 +19,10 @@ const Contact = () => {
           you enhance and empower yoyur build.
         </div>
 
-        <button className="bg-blue-500 text-white px-6 py-3 lg:w-1/4 mt-5 rounded-lg" onClick={()=>toggle(setOpen)}>
+        <button
+          className="bg-blue-500 text-white px-6 py-3 lg:w-1/4 mt-5 rounded-lg"
+          onClick={() => toggle(setOpen)}
+        >
           Contact Sales
         </button>
       </div>

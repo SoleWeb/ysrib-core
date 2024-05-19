@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { toggle } from "@/utils/functions/toggle";
-import { UnderConstruction } from "@/utils/alert/underConstruction";
+import { UnderConstruction } from "@/components";
 
 const features = [
   {

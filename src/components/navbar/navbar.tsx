@@ -1,6 +1,6 @@
 import NavbarHdrActions from "./navbarAction";
 import BrandLogo from "./logo";
-import {NavbarHdr} from "./navbar";
+import {NavbarHdr} from "./navbarHdrMenu";
 
 const Navbar = () => {
     return <div className="

@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react";
 
-const Footer = () => {
+export const Footer = () => {
   const getYear = () => {
     const today = new Date();
     const year = today.getFullYear();
@@ -25,5 +25,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;
