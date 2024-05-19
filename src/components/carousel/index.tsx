@@ -85,7 +85,7 @@ const Carousel = () => {
         More than 100+ brands have built their business with Yasrib Software
       </div>
 
-      <div className="grid sm:grid-cols-3 md:grid-cols-6 p-4 lg:flex lg:flex-wrap lg:items-center lg:justify-center">
+      <div className="grid sm:grid-cols-3 md:grid-cols-6 lg:flex lg:flex-wrap lg:items-center lg:justify-center">
         <AnimatePresence custom={currentImageIndex}>
           {images.map((image, index) => (
             <motion.div
@@ -96,7 +96,7 @@ const Carousel = () => {
                 scale: index === currentImageIndex ? 1.2 : 1,
                 transition: { duration: 0.5 },
               }}
-              className="flex items-center justify-center h-40 w-40"
+              className="flex items-center justify-center p-6"
               exit={{ opacity: 0 }}
               custom={index}
               transition={{
@@ -108,7 +108,7 @@ const Carousel = () => {
                 alt={image.alt}
                 width={200}
                 height={200}
-                className="object-contain h-20 w-20 items-center justify-center flex mx-auto"
+                className="object-contain h-20 w-20 items-center justify-center flex "
               />
             </motion.div>
           ))}
