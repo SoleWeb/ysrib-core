@@ -1,5 +1,5 @@
 "use client";
-import { UnderConstruction } from "@/components/alert/underConstruction";
+import { UnderConstruction } from "@/components";
 import { toggle } from "@/utils/functions/toggle";
 import { useState } from "react";
 
