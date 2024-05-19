@@ -2,22 +2,20 @@ import Image from "next/image";
 
 const WhyWe = () => {
   return (
-    <div
-      className="
-    flex
-    p-10
-    flex-col lg:flex-row lg:justify-evenly
-   
-    "
-    >
+    <div className="flex lg:p-10 md:p-4 flex-col lg:flex-row lg:justify-evenly">
       <div className="flex-col lg:flex-row gap-6 lg:px-10 flex  items-center">
         <div className="lg:w-2/3 w-full">
           <video className="rounded-xl" autoPlay muted loop>
             <source src="/content/videos/vdo.mp4" type="video/mp4" />
           </video>
+
+          <div className="text-2xl mb-8 pt-10">
+            Built for all businesses and communities, Yasrib is the only
+            platform you need to grow your business.
+          </div>
         </div>
 
-        <div className="flex-col border p-4 rounded-xl lg:w-2/5">
+        <div className="flex-col border p-4 rounded-xl lg:w-2/5 w-full">
           <div
             className="text-4xl flex justify-center text-center
                 lg:text-5xl

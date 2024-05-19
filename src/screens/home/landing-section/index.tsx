@@ -23,9 +23,12 @@ const LandingSection = () => {
 
         <p
           className="text-lg lg:text-xl md-10
-            bg-gradient-to-r
-            from-black
-            to-gray-400
+            light:bg-gradient-to-r
+            light:from-black
+            light:to-gray-400
+            dark:bg-gradient-to-r
+            dark:from-slate-400
+            dark:to-gray-600
             bg-clip-text
             text-transparent
             font-bold"
