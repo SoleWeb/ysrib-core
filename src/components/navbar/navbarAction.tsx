@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-
 import {
   Sheet,
   SheetContent,
@@ -8,10 +7,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
 import { AlignJustify } from "lucide-react";
-
 import Link from "next/link";
+import { ThemeToggle } from "../theme/themeToggle";
 
 const NavbarHdrActions = () => {
   return (
@@ -42,6 +40,7 @@ const NavbarHdrActions = () => {
           Sign in
         </Button>
         <Button className="text-md bg-blue-500">Get Started</Button>
+        <ThemeToggle />
       </div>
     </div>
   );
