@@ -9,12 +9,7 @@ export const Footer = () => {
   };
   const [currentDate, setCurrentDate] = useState(getYear());
   return (
-    <div
-      className="
-    border-t-[1px]
-    hidden
-    lg:block"
-    >
+    <div className="border-t-[1px]">
       <div className="flex justify-evenly gap-4 p-4">
         <div>
           <div className="flex flex-col p-4 cursor-pointer text-xl">
