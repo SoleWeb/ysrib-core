@@ -7,6 +7,7 @@ const font = Outfit({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Yasrib",
   description: "Leveraging Open-Source",
+  manifest: "/images/favicon_io/site.webmanifest"
 };
 
 export default function RootLayout({
