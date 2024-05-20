@@ -1,5 +1,5 @@
 import Carousel from "@/components/carousel";
-import { Footer, Navbar } from "@/components";
+import { Footer, MovingCarousel, Navbar } from "@/components";
 import {
   Contact,
   KeyFeatures,
@@ -13,7 +13,8 @@ export default function Home() {
     <>
       <Navbar />
       <LandingSection />
-      <Carousel />
+      {/* <Carousel /> */}
+      <MovingCarousel />
       <KeyFeatures />
       <WhyWe />
       {/* <Pricing /> */}

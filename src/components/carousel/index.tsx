@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const images = [
+export const BrandImages = [
   {
     url: "/images/logo/logo-1.svg",
     alt: "Logo",
@@ -70,7 +70,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        prevIndex === BrandImages.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000);
 
@@ -87,7 +87,7 @@ const Carousel = () => {
 
       <div className="grid sm:grid-cols-3 md:grid-cols-6 lg:flex lg:flex-wrap lg:items-center lg:justify-center">
         <AnimatePresence custom={currentImageIndex}>
-          {images.map((image, index) => (
+          {BrandImages.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0 }}
