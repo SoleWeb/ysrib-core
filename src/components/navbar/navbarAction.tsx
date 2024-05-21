@@ -4,6 +4,7 @@ import {
   Sheet,
   SheetContent,
   SheetDescription,
+  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -11,8 +12,18 @@ import {
 import { AlignJustify } from "lucide-react";
 import Link from "next/link";
 import { ThemeToggle } from "../theme/themeToggle";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const NavbarHdrActions = () => {
+  const { theme } = useTheme();
+  console.log(theme);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <div>
       <div className="lg:hidden">
@@ -20,15 +31,22 @@ const NavbarHdrActions = () => {
           <SheetTrigger>
             <AlignJustify />
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className="flex flex-col justify-between">
             <SheetHeader>
               <SheetDescription>
                 <div className="flex flex-col space-y-4 items-start w-full text-lg mt-10">
                   <Link href="./">Home</Link>
-                  <ThemeToggle />
                 </div>
               </SheetDescription>
             </SheetHeader>
+            <SheetFooter>
+              <SheetDescription className="w-full">
+                <div className="flex items-center justify-center w-full text-lg">
+                  <ThemeToggle showTheme={true}/> 
+                  
+                </div>
+              </SheetDescription>
+            </SheetFooter>
           </SheetContent>
         </Sheet>
       </div>
