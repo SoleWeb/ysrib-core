@@ -1,11 +1,11 @@
 import Carousel from "@/components/carousel";
 import { Footer, MovingCarousel, Navbar } from "@/components";
 import {
+  AboutUs,
   Contact,
   KeyFeatures,
   LandingSection,
   Pricing,
-  WhyWe,
 } from "@/screens/home";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
         <MovingCarousel />
       </div>
       <KeyFeatures />
-      <WhyWe />
+      <AboutUs />
       {/* <Pricing /> */}
       <Contact />
       <Footer />

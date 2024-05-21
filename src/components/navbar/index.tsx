@@ -12,7 +12,7 @@ const Navbar = () => {
     h-20
     ">
         <BrandLogo />
-        {/* <NavbarHdr /> */}
+        <NavbarHdr />
         <NavbarHdrActions />
     </div>;
 }

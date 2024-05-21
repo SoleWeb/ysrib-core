@@ -61,7 +61,7 @@ export function NavbarHdr() {
   return (
     <NavigationMenu>
       <NavigationMenuList className="hidden lg:flex lg:space-x-4">
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -92,8 +92,8 @@ export function NavbarHdr() {
               </ListItem>
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
+        </NavigationMenuItem> */}
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] lg:grid-cols-2 lg:w-[600px] ">
@@ -104,22 +104,18 @@ export function NavbarHdr() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="./" legacyBehavior passHref>
             <NavigationMenuLink className="font-medium p-4">
-              Documentation
+              Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-
         <NavigationMenuItem>
-          <Link href="#pricing" legacyBehavior passHref>
-            <NavigationMenuLink
-              className="
-              font-medium p-4"
-            >
-              Pricing
+          <Link href="./#about-us" legacyBehavior passHref>
+            <NavigationMenuLink className="font-medium p-4">
+              About Us
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

@@ -1,6 +1,6 @@
 "use client";
 import { UnderConstruction } from "@/components";
-import { toggle } from "@/utils/functions/toggle";
+import { sendEmail } from "@/utils/functions/sendMail";
 import { useState } from "react";
 
 const Contact = () => {
@@ -20,8 +20,8 @@ const Contact = () => {
         </div>
 
         <button
-          className="bg-blue-500 text-white px-6 py-3 lg:w-1/4 mt-5 rounded-lg"
-          onClick={() => toggle(setOpen)}
+          className="bg-blue-500 text-white px-6 py-3 lg:w-1/4 mt-5 rounded-lg min-w-fit"
+          onClick={sendEmail}
         >
           Contact Sales
         </button>
