@@ -33,7 +33,7 @@ const WhyWe = () => {
             <div className="flex-col">
               <div className="text-lg pt-10 flex items-center gap-5">
                 <Image
-                  src="/images/icons/icon-build.png"
+                  src="/images/icons/icon-distribution-package-3.png"
                   alt="feature-1"
                   width={70}
                   height={70}
