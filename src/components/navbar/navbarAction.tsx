@@ -23,7 +23,7 @@ const NavbarHdrActions = () => {
           <SheetContent>
             <SheetHeader>
               <SheetDescription>
-                <div className="flex flex-col space-y-4 items-start w-full text-lg text-black mt-10">
+                <div className="flex flex-col space-y-4 items-start w-full text-lg mt-10">
                   <Link href="./">Home</Link>
                   <ThemeToggle />
                 </div>
