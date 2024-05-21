@@ -4,8 +4,8 @@ import { BrandImages } from "..";
 const AnimatedEl = ({ className, ...props }: { className?: String }) => {
   return (
     <div className={cn("flex animate-move", className)} {...props}>
-      {BrandImages.map((image) => (
-        <div className="flex justify-center items-center min-w-[150px] snap-center">
+      {BrandImages.map((image, index) => (
+        <div className="flex justify-center items-center min-w-[150px] snap-center" key={index}>
           <span
             className="box-border inline-block overflow-hidden m-0 p-0 relative max-w-full opacity-100"
             style={{
