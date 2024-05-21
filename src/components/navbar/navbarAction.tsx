@@ -1,16 +1,16 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetFooter,
   SheetHeader,
+  SheetLinkWithClose,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { AlignJustify } from "lucide-react";
-import Link from "next/link";
 import { ThemeToggle } from "../theme/themeToggle";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -35,15 +35,19 @@ const NavbarHdrActions = () => {
             <SheetHeader>
               <SheetDescription>
                 <div className="flex flex-col space-y-4 items-start w-full text-lg mt-10">
-                  <Link href="./">Home</Link>
+                  <SheetLinkWithClose href="./">
+                    Home
+                  </SheetLinkWithClose>
+                  <SheetLinkWithClose href="./#about-us">
+                    About Us
+                  </SheetLinkWithClose>
                 </div>
               </SheetDescription>
             </SheetHeader>
             <SheetFooter>
               <SheetDescription className="w-full">
                 <div className="flex items-center justify-center w-full text-lg">
-                  <ThemeToggle showTheme={true}/> 
-                  
+                  <ThemeToggle showTheme={true} />
                 </div>
               </SheetDescription>
             </SheetFooter>
