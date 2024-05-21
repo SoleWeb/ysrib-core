@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { BrandImages } from "..";
+import Image from "next/image";
 const AnimatedEl = ({ className, ...props }: { className?: String }) => {
   return (
     <div className={cn("flex animate-move", className)} {...props}>
@@ -24,7 +25,7 @@ const AnimatedEl = ({ className, ...props }: { className?: String }) => {
                 border: 0,
               }}
             >
-              <img
+              <Image
                 src={image.url}
                 alt={image.alt}
                 className="p-4 m-0  block max-w-full box-border border-none border-0"
