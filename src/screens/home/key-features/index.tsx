@@ -57,7 +57,7 @@ const KeyFeatures = () => {
     <div className="">
       <UnderConstruction open={open} onOpenChange={setOpen} />
       <div className="lg:flex-row flex-col items-center flex  justify-center pb-10">
-        <div className="p-5 justify-center lg:w-1/3">
+        <div className="p-5 justify-center lg:w-1/3 md:pb-10">
           <div
             className="
                 bg-gradient-to-r
@@ -68,7 +68,7 @@ const KeyFeatures = () => {
                 text-4xl
                 lg:text-6xl
                 font-bold
-                pb-10"
+                pb-6"
           >
             From startup to enterprise, Yasrib is built for all.
           </div>
@@ -80,9 +80,11 @@ const KeyFeatures = () => {
           </button>
         </div>
 
-        <video className="rounded-xl lg:w-2/5 p-4 lg:p-0 " autoPlay muted loop>
+        <div className="lg:w-2/4 md:w-4/5 w-full">
+        <video className="lg:rounded-xl md:rounded-xl" autoPlay muted loop>
           <source src="/content/videos/vdo.mp4" type="video/mp4" />
         </video>
+        </div>
       </div>
 
       <div className="flex-col items-center justify-center">

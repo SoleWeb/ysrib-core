@@ -8,29 +8,23 @@ const AboutUs = () => {
     >
       <div className="w-full flex justify-center items-center pb-8 my-4">
         <span
-          className="text-6xl bg-gradient-to-l
-                from-yellow-300
-                to-blue-300
-                bg-clip-text
-                font-bold
-                text-transparent"
-        >
+          className="text-6xl bg-gradient-to-l from-yellow-300 to-blue-300 bg-clip-text font-bold text-transparent text-center">
           Why work with us
         </span>
       </div>
       <div className="flex-col lg:flex-row gap-6 lg:px-10 flex items-center">
         <div className="lg:w-2/3 w-full">
-          <video className="rounded-xl" autoPlay muted loop>
+          <video className="lg:rounded-xl md:rounded-xl" autoPlay muted loop>
             <source src="/content/videos/vdo.mp4" type="video/mp4" />
           </video>
 
-          <div className="text-2xl mb-8 pt-10">
+          <div className="text-2xl mb-8 pt-10 w-full text-center">
             Built for all businesses and communities, Yasrib is the only
             platform you need to grow your business.
           </div>
         </div>
 
-        <div className="flex-col border p-4 rounded-xl lg:w-2/5 w-full">
+        <div className="flex-col border p-4 rounded-xl lg:w-2/5 w-11/12">
           <div
             className="
             text-4xl 

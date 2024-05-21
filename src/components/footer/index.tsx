@@ -12,7 +12,7 @@ export const Footer = () => {
     <div className="border-t-[1px]">
       <div className="flex justify-evenly gap-4 p-4">
         <div>
-          <div className="flex flex-col p-4 cursor-pointer text-xl">
+          <div className="flex flex-col p-4 cursor-pointer text-xl text-center">
             All rights reserved. @{currentDate} by Yasrib Inc.
           </div>
         </div>

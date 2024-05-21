@@ -17,7 +17,6 @@ import { useEffect, useState } from "react";
 
 const NavbarHdrActions = () => {
   const { theme } = useTheme();
-  console.log(theme);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -35,9 +34,7 @@ const NavbarHdrActions = () => {
             <SheetHeader>
               <SheetDescription>
                 <div className="flex flex-col space-y-4 items-start w-full text-lg mt-10">
-                  <SheetLinkWithClose href="./">
-                    Home
-                  </SheetLinkWithClose>
+                  <SheetLinkWithClose href="./">Home</SheetLinkWithClose>
                   <SheetLinkWithClose href="./#about-us">
                     About Us
                   </SheetLinkWithClose>
