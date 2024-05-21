@@ -35,6 +35,8 @@ const AnimatedEl = ({ className, ...props }: { className?: String }) => {
                   background: `none`,
                   border: 0,
                 }}
+                width={200}
+                height={200}
               />
             </span>
           </span>
