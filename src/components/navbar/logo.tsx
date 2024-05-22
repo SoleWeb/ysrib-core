@@ -1,15 +1,23 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
+import React from "react";
 
-const BrandLogo = () => {
+interface BrandLogoProps {
+  className?: string;
+}
+
+const BrandLogo = ({ className }: BrandLogoProps) => {
   return (
-    <Link href="./">
-      <Image
-        src="/images/logo/logoipsum-325.svg"
-        alt="Yasrib brand logo"
-        width={200}
-        height={50}
-      />
+    <Link href="./" className={className}>
+      <div className="pl-6 w-fit h-20 flex justify-center items-center">
+        <Image
+          src="/images/favicon_io/logo.png"
+          alt="Yasrib brand logo"
+          width={40}
+          height={40}
+          className="invert"
+        />
+      </div>
     </Link>
   );
 };
