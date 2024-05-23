@@ -3,7 +3,8 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <section
-      className="flex lg:p-10 md:p-4 flex-col bg-primary-foreground"
+      className="flex pt-20 lg:p-10 md:p-4 flex-col bg-primary-foreground"
+      style={{paddingTop:'6rem!important',marginTop:'6rem!important'}}
       id="about-us"
     >
       <div className="w-full flex justify-center items-center pb-8 my-4">

@@ -15,7 +15,7 @@ const BrandLogo = ({ className }: BrandLogoProps) => {
           alt="Yasrib brand logo"
           width={40}
           height={40}
-          className="invert"
+          className="dark:invert"
         />
       </div>
     </Link>
