@@ -34,7 +34,7 @@ export function ThemeToggle({ showTheme = false }: { showTheme?: boolean }) {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" >
           {theme === "dark" && (
-            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <Moon className="h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           )}
           {theme === "light" && (
             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all light:-rotate-90 light:scale-0" />
