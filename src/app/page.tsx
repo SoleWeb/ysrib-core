@@ -15,7 +15,7 @@ export default function Home() {
       <LandingSection />
       {/* <Carousel /> */}
       <div className="mb-10">
-        <div className="items-center justify-center flex text-3xl font-bold lg:pb-6 px-8 bg-gradient-to-r from-blue-500 to-green-300 bg-clip-text text-transparent">
+        <div className="items-center justify-center flex text-3xl font-bold lg:pb-6 px-8 bg-gradient-to-r from-blue-500 to-green-300 bg-clip-text text-transparent text-center">
           More than 100+ brands have built their business with Yasrib Software
         </div>
         <MovingCarousel />
