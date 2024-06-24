@@ -7,7 +7,7 @@ const Contact = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className="lg:py-20 p-5">
+    <section id="contact" className="lg:py-20 p-5">
       <UnderConstruction open={open} onOpenChange={setOpen} />
       <div className="border-[1px] lg:w-2/3 mx-auto p-10 rounded-xl">
         <div className="text-4xl font-bold mb-5">
@@ -26,7 +26,7 @@ const Contact = () => {
           Contact Sales
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -35,9 +35,8 @@ const NavbarHdrActions = () => {
               <SheetDescription>
                 <div className="flex flex-col space-y-4 items-start w-full text-lg mt-10">
                   <SheetLinkWithClose href="./">Home</SheetLinkWithClose>
-                  <SheetLinkWithClose href="./#about-us">
-                    About Us
-                  </SheetLinkWithClose>
+                  <SheetLinkWithClose href="./#about-us">About Us</SheetLinkWithClose>
+                  <SheetLinkWithClose href="./#contact">Contact</SheetLinkWithClose>
                 </div>
               </SheetDescription>
             </SheetHeader>

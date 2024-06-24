@@ -112,10 +112,20 @@ export function NavbarHdr() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+
+
         <NavigationMenuItem>
           <Link href="./#about-us" legacyBehavior passHref>
             <NavigationMenuLink className="font-medium p-4">
               About Us
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <Link href="./#contact" legacyBehavior passHref>
+            <NavigationMenuLink className="font-medium p-4">
+              Contact
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
