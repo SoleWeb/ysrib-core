@@ -54,6 +54,11 @@ interface UnderConstructionProps {
   onOpenChange: (open: boolean) => void;
 }
 
+interface LinkDisabledProps {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+}
+
 export const UnderConstruction = ({
   open,
   onOpenChange,
@@ -66,6 +71,22 @@ export const UnderConstruction = ({
       description="This page is currently under construction. Please check back later."
       cancel="Cancel"
       confirm="Okay, No Problem"
+    />
+  );
+};
+
+export const LinkDisabled = ({
+  open,
+  onOpenChange,
+}: LinkDisabledProps) => {
+  return (
+    <Alert
+      open={open}
+      onOpenChange={onOpenChange}
+      title="Sorry! Link is out of service"
+      description="Please check back later"
+      cancel="Close"
+      confirm="Okay! Fine"
     />
   );
 };

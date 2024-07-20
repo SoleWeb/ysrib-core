@@ -18,48 +18,39 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import Logo from "./logo";
+import { LinkDisabled } from "../alert";
+import { toggle } from "@/utils/functions/toggle";
 
-const components: { title: string; description: string }[] = [
+const components: { title: string; description: string; url: string }[] = [
   {
-    title: "Frozen",
-
-    description:
-      "Recommended template for most use cases. Includes all the components you need to get started.",
+    title: "JSON-WEB",
+    description: "A Java library that provides advancements for web based components",
+    url: "#",
   },
   {
-    title: "Swift",
-
-    description:
-      "A template with a minimal set of components. Use this template if you want to build your own components.",
+    title: "Yasrib UI",
+    description: "Beautifully designed components that you can copy and paste into your JS apps.",
+    url: "#",
   },
   {
-    title: "Tuscany",
-
-    description:
-      "Advanced template with more components and features. Use this template if you want to build a complex UI.",
-  },
-  {
-    title: "Amber",
-
-    description: "Great for building a marketing or landing page.",
-  },
-  {
-    title: "Tide",
-
-    description:
-      "Layered template with a sidebar navigation. Great for building a dashboard or admin panel.",
-  },
-  {
-    title: "Mint",
-
-    description:
-      "Nice template for building a blog or a content-heavy website.",
+    title: "Yasrib.css",
+    description: "A CSS framework packed with advanced classes that can be composed to build any design, directly in your markup.",
+    url: "#",
   },
 ];
 
 export function NavbarHdr() {
+  const [openLinkDisabledModal, setOpenLinkDisabledModal] = React.useState<boolean>(false);
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    const ariaDisabled = e.currentTarget.getAttribute('aria-disabled')
+    if (ariaDisabled === 'true') {
+      e.preventDefault()
+      setOpenLinkDisabledModal(true)
+    }
+  };
   return (
     <NavigationMenu>
+      <LinkDisabled open={openLinkDisabledModal} onOpenChange={setOpenLinkDisabledModal}/>
       <NavigationMenuList className="hidden lg:flex lg:space-x-4">
         {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
@@ -93,18 +84,18 @@ export function NavbarHdr() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem> */}
-        {/* <NavigationMenuItem>
-          <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Products</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] lg:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
-                <ListItem key={component.title} title={component.title}>
+                <ListItem key={component.title} title={component.title} href={component.url} disabled={component.url==='#'} onClick={handleClick}>
                   {component.description}
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem> */}
+        </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="./" legacyBehavior passHref>
             <NavigationMenuLink className="font-medium p-4">
@@ -136,8 +127,8 @@ export function NavbarHdr() {
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<"a"> & {disabled?: boolean}
+>(({ className, title, children, disabled, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -148,13 +139,15 @@ const ListItem = React.forwardRef<
             className
           )}
           {...props}
+          aria-disabled={disabled}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground" aria-disabled={disabled}>
             {children}
           </p>
         </a>
       </NavigationMenuLink>
+      
     </li>
   );
 });
