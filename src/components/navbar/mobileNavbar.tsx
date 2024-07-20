@@ -15,7 +15,7 @@ import { ThemeToggle } from "../theme/themeToggle";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-const NavbarHdrActions = () => {
+const MobileNavbar = () => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -62,4 +62,4 @@ const NavbarHdrActions = () => {
   );
 };
 
-export default NavbarHdrActions;
+export default MobileNavbar;

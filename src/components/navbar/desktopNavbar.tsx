@@ -39,7 +39,7 @@ const components: { title: string; description: string; url: string }[] = [
   },
 ];
 
-export function NavbarHdr() {
+export function DesktopNavbar() {
   const [openLinkDisabledModal, setOpenLinkDisabledModal] = React.useState<boolean>(false);
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     const ariaDisabled = e.currentTarget.getAttribute('aria-disabled')

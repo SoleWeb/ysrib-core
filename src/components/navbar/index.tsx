@@ -1,6 +1,6 @@
-import NavbarHdrActions from "./navbarAction";
 import BrandLogo from "./logo";
-import {NavbarHdr} from "./navbarHdrMenu";
+import {DesktopNavbar} from "./desktopNavbar";
+import MobileNavbar from "./mobileNavbar";
 
 const Navbar = () => {
     return <><nav className="
@@ -17,8 +17,8 @@ const Navbar = () => {
     z-50
     ">
         <BrandLogo/>
-        <NavbarHdr />
-        <NavbarHdrActions />
+        <DesktopNavbar />
+        <MobileNavbar />
     </nav>
     {/* Filler for NAV */}
     <div className="h-20"></div>
